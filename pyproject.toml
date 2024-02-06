@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling", "pywin32"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mytools"
+version = "0.0.1"
+authors = [
+  { name="Fan4_Metal", email="Fan4_Metal@mail.ru" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+]
+
+[project.urls]
+Homepage = "https://github.com/Fan4Metal/mytools"
