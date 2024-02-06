@@ -17,7 +17,7 @@ def colored(r: int, g: int, b: int, text: str):
     return f"\033[38;2;{r};{g};{b}m{text}\033[0m"
 
 
-def create_shortcut(path, target):
+def create_shortcut(path: str, target: str):
     """Создать ярлык Windows (*.lnk)"""
     shell = Dispatch("WScript.Shell")
     shortcut = shell.CreateShortCut(path + ".lnk")
