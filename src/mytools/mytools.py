@@ -3,7 +3,10 @@ import sys
 
 from win32com.client import Dispatch
 
-__all__ = ['printer', 'colored', 'create_shortcut', 'convert_bytes', 'file_to_list', 'list_to_file']
+__all__ = [
+    'printer', 'colored', 'create_shortcut', 'convert_bytes', 'file_to_list', 'list_to_file', 'print_r', 'print_g', 'print_b', 'print_m',
+    'print_c', 'print_y', 'print_w', 'print_gr'
+]
 
 
 def printer(data: str):
@@ -15,6 +18,38 @@ def printer(data: str):
 def colored(r: int, g: int, b: int, text: str):
     """Цветной вывод в терминал"""
     return f"\033[38;2;{r};{g};{b}m{text}\033[0m"
+
+
+def print_r(text: str):
+    print(colored(255, 0, 0, text))
+
+
+def print_g(text: str):
+    print(colored(0, 255, 0, text))
+
+
+def print_b(text: str):
+    print(colored(0, 0, 255, text))
+
+
+def print_y(text: str):
+    print(colored(255, 255, 0, text))
+
+
+def print_c(text: str):
+    print(colored(0, 255, 255, text))
+
+
+def print_m(text: str):
+    print(colored(255, 0, 255, text))
+
+
+def print_w(text: str):
+    print(colored(255, 255, 255, text))
+
+
+def print_gr(text: str):
+    print(colored(100, 100, 100, text))
 
 
 def create_shortcut(path: str, target: str):
