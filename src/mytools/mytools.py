@@ -21,34 +21,42 @@ def colored(r: int, g: int, b: int, text: str):
 
 
 def print_r(text: str):
+    """Вывод в терминал красным цветом"""
     print(colored(255, 0, 0, text))
 
 
 def print_g(text: str):
+    """Вывод в терминал зеленым цветом"""
     print(colored(0, 255, 0, text))
 
 
 def print_b(text: str):
+    """Вывод в терминал голубым цветом"""
     print(colored(0, 0, 255, text))
 
 
 def print_y(text: str):
+    """Вывод в терминал желтым цветом"""
     print(colored(255, 255, 0, text))
 
 
 def print_c(text: str):
+    """Вывод в терминал сине-зелёным (cyan) цветом"""
     print(colored(0, 255, 255, text))
 
 
 def print_m(text: str):
+    """Вывод в терминал пурпурным цветом"""
     print(colored(255, 0, 255, text))
 
 
 def print_w(text: str):
+    """Вывод в терминал белым цветом"""
     print(colored(255, 255, 255, text))
 
 
 def print_gr(text: str):
+    """Вывод в терминал серым цветом"""
     print(colored(100, 100, 100, text))
 
 
